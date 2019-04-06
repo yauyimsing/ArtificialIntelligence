@@ -32,7 +32,7 @@ class NeuralNetwork:
             #print('time: ', i)
             self.weights.append((2*np.random.random((layers[i-1]+1, layers[i]+1))-1)*0.25)
             self.weights.append((2*np.random.random((layers[i]+1, layers[i+1]))-1)*0.25)
-        print('weights: ', self.weights)
+        #print('weights: ', self.weights)
     
     def fit(self, X, y, learning_rate=0.2, epochs=10000):
         X = np.atleast_2d(X)
