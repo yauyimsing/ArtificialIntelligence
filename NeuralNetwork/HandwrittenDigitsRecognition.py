@@ -27,7 +27,7 @@ labels_train = LabelBinarizer().fit_transform(y_train)
 labels_test = LabelBinarizer().fit_transform(y_test)
 #print('labels_test: ', labels_test.shape)
 print('start fitting')
-nn.fit(X_train, labels_train, epochs=3000)
+nn.fit(X_train, labels_train, epochs=30000)
 predictions = []
 for i in range(X_test.shape[0]):
     o = nn.predict(X_test[i])
